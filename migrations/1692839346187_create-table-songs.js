@@ -20,14 +20,15 @@ exports.up = (pgm) => {
         },
         genre: {
             type: "TEXT",
-            notNull: false,
+            notNull: true,
         },
         duration: {
             type: "INT",
             notNull: false,
         },
-        albumId: {
+        album_id: {
             type: "TEXT",
+            notNull: false
         }
     });
 };
