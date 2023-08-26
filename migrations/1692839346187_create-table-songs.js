@@ -29,7 +29,6 @@ exports.up = (pgm) => {
         album_id: {
             type: "TEXT",
             notNull: false,
-            references: '"albums"',
         }
     });
     
